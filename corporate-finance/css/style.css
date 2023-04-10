@@ -1202,6 +1202,18 @@ header a.logo img {
     opacity: 0.851;
 }
 
+.overlay-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linkedin-profile{
+    color: white;
+    font-size: 22px;
+
+}
+
 .nav-pills .nav-link {border-radius: 0;}
 
 .search-icon {
