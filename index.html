@@ -123,7 +123,7 @@
     <div class="quote-content hidden animated-modal" id="animatedModal">
         <!--Heading-->
         <div class="pb-md-5 p-0 text-center">
-            <span class="text-blue font-weight-200 font-20">Learn more about SunshineTokens</span>
+            <span class="text-blue font-weight-200 font-20">Learn More about SunshineTokens</span>
             <h2 class="main-font font-weight-600 text-black mt-2">Get here the prospect with info about <span class="text-green js-rotating">business plan, financials, opportunity</span></h2>
         </div>
         <!--Contact Form-->
@@ -139,13 +139,26 @@
                                type="text">
                     </div>
                     <div class="form-group">
-                        <input class="form-control" id="quote_contact" name="userPhone" placeholder="Phone Number with Country Code" required=""
+                        <input class="form-control" id="quote_contact" name="userPhone" placeholder="Phone number with country code" required=""
                                type="text">
+                    </div>
+                </div>
+
+                <!--Right Column-->
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input class="form-control" id="quote_email" name="userEmail" placeholder="Email" required=""
+                               type="email">
                     </div>
                     <div class="form-group">
-                        <input class="form-control" id="quote_type" name="projectType" placeholder="Project type" required=""
-                               type="text">
+                        <input class="form-control" id="quote_address" name="userAddress" placeholder="City / Country"
+                               required="" type="text">
                     </div>
+                </div>
+
+                <!--Button-->
+                <div class="col-md-12">
+                    <a href="javascript:void(0)" class="btn btn-large btn-rounded btn-green btn-hvr-up btn-hvr-blue modal_contact_btn" id="quote_submit_btn">Submit Now</a>
                 </div>
             </div>
         </form>
