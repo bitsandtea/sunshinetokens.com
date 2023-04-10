@@ -121,11 +121,18 @@
 
     <!--Get Started Model Popup-->
     <div class="quote-content hidden animated-modal" id="animatedModal">
-        <!--Heading-->
-        <div class="pb-md-5 p-0 text-center">
+        <div class="video-player">
+            <video src="/vendor/video/coldplay-viva-la-vida-official-video-easysave.net.mp4" type="video/mp4" width="320" height="240" controls>
+
+            </video>
+        </div>
+        
+        <div class="popup">
+            <!--Heading-->
+            <div class="pb-md-5 p-0 text-center">
             <span class="text-blue font-weight-200 font-20">Learn More about SunshineTokens</span>
             <h2 class="main-font font-weight-600 text-black mt-2">Get here the prospect with info about <span class="text-green js-rotating">business plan, financials, opportunity</span></h2>
-        </div>
+            </div>
         <!--Contact Form-->
         <form class="contact-form" id="modal-contact-form-data">
             <div class="row">
@@ -158,10 +165,12 @@
 
                 <!--Button-->
                 <div class="col-md-12">
-                    <a href="javascript:void(0)" class="btn btn-large btn-rounded btn-green btn-hvr-up btn-hvr-blue modal_contact_btn" id="quote_submit_btn">Submit Now</a>
+                    <a href="#" class="btn btn-large btn-rounded btn-green btn-hvr-up btn-hvr-blue modal_contact_btn" id="quote_submit_btn" onclick="playVideo()">Submit Now</a>
                 </div>
             </div>
-        </form>
+        </form> 
+        </div>
+  
     </div>
 </header>
 <!-- END HEADER -->
@@ -1012,6 +1021,7 @@
 <script src="corporate-finance/js/jquery.hoverdir.js"></script>
 <!-- custom script -->
 <script src="vendor/js/contact_us.js"></script>
+<script src="vendor/js/video-play.js"></script>
 <script src="corporate-finance/js/script.js"></script>
 </body>
 </html>

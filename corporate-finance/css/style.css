@@ -2640,3 +2640,11 @@ ul.rounded li::before {
         margin: 0;
     }
 }
+
+.popup{
+    display: block;
+}
+
+.video-player{
+    display: none;
+}
