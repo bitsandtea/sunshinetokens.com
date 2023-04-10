@@ -1146,6 +1146,7 @@ header a.logo img {
     position: relative;
     -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    width: 33%;
 }
 
 .da-thumbs{
@@ -1156,6 +1157,7 @@ header a.logo img {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .da-thumbs>li{
@@ -2254,6 +2256,11 @@ ul.rounded li::before {
 
 .loader:before {
     animation-delay: .5s;
+}
+
+.team-profile{
+    width: 100%;
+    height: 100%;
 }
 @keyframes load {
     0% {
