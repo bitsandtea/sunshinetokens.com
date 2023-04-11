@@ -120,57 +120,57 @@
     <!-- End side menu -->
 
     <!--Get Started Model Popup-->
-    <div class="quote-content hidden animated-modal" id="animatedModal">
-        <div id="info-video" class="hidden">
-            <h2 class="main-font font-weight-600 text-black my-2">You have signed up - We will email you soon!</h2>
-            <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-        </div>
-        
-        <div id="signup-popup" class="block">
-            <!--Heading-->
-            <div class="pb-md-5 p-0 text-center">
-            <span class="text-blue font-weight-200 font-20">Learn More about SunshineTokens</span>
-            <h2 class="main-font font-weight-600 text-black mt-2">Get here the prospect with info about <span class="text-green js-rotating">business plan, financials, opportunity</span></h2>
+        <div class="quote-content hidden animated-modal" id="animatedModal">
+            <div id="info-video">
+                <h2 class="main-font font-weight-600 text-black my-2">You have signed up - We will email you soon!</h2>
+                <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"></iframe>
             </div>
-        <!--Contact Form-->
-        <form class="contact-form" id="modal-contact-form-data">
-            <div class="row">
-                <!--Result-->
-                <div class="col-12" id="quote_result"></div>
+            
+            <div id="signup-popup">
+                <!--Heading-->
+                <div class="pb-md-5 p-0 text-center">
+                <span class="text-blue font-weight-200 font-20">Learn More about SunshineTokens</span>
+                <h2 class="main-font font-weight-600 text-black mt-2">Get here the prospect with info about <span class="text-green js-rotating">business plan, financials, opportunity</span></h2>
+                </div>
+            <!--Contact Form-->
+            <form class="contact-form" id="modal-contact-form-data">
+                <div class="row">
+                    <!--Result-->
+                    <div class="col-12" id="quote_result"></div>
 
-                <!--Left Column-->
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <input class="form-control" id="quote_name" name="quoteName" placeholder="Name" required=""
-                               type="text">
+                    <!-- Left Column -->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control" id="quote_name" name="quoteName" placeholder="Name" required=""
+                                type="text">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" id="quote_contact" name="userPhone" placeholder="Phone number with country code" required=""
+                                type="text">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input class="form-control" id="quote_contact" name="userPhone" placeholder="Phone number with country code" required=""
-                               type="text">
+
+                    <!--Right Column-->
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control" id="quote_email" name="userEmail" placeholder="Email" required=""
+                                type="email">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" id="quote_address" name="userAddress" placeholder="City / Country"
+                                required="" type="text">
+                        </div>
+                    </div>
+
+                    <!--Button-->
+                    <div class="col-md-12">
+                        <button class="btn btn-large btn-rounded btn-green btn-hvr-up btn-hvr-blue modal_contact_btn" id="quote_submit_btn" onclick="playVideo()">Submit Now</button>
                     </div>
                 </div>
-
-                <!--Right Column-->
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <input class="form-control" id="quote_email" name="userEmail" placeholder="Email" required=""
-                               type="email">
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control" id="quote_address" name="userAddress" placeholder="City / Country"
-                               required="" type="text">
-                    </div>
-                </div>
-
-                <!--Button-->
-                <div class="col-md-12">
-                    <a href="#" class="btn btn-large btn-rounded btn-green btn-hvr-up btn-hvr-blue modal_contact_btn" id="quote_submit_btn" onclick="playVideo()">Submit Now</a>
-                </div>
+            </form> 
             </div>
-        </form> 
+    
         </div>
-  
-    </div>
 </header>
 <!-- END HEADER -->
 

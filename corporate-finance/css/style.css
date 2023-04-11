@@ -1211,6 +1211,14 @@ header a.logo img {
     margin-bottom: 10px;
 }
 
+#info-video{
+    /* change this to block to show video */
+    display: none; 
+}
+
+#signup-popup{
+    display: block;
+}
 /* ===================================
    Client
 ====================================== */
@@ -1219,6 +1227,7 @@ header a.logo img {
     width: auto;
     max-width: 100%;
     display: inline-block;
+    
 }
 
 .partners-slider .logo-item{
