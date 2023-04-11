@@ -1,7 +1,7 @@
 function playVideo() {
-    var modal = document.getElementById("popup");
-    var video = document.getElementById("video-player");
-    if (video.style.display === "none") {
+    var modal = document.getElementById("signup-popup");
+    var video = document.getElementById("info-video");
+    if (video.style.display === "hidden") {
         video.style.display = "block";
     }
     if (modal.style.display === "block") {
