@@ -298,8 +298,13 @@ section{padding: 7.5rem 0;}
 /* nav top default */
 
 header a.logo img {
-    max-width: 80px;
+    max-width: 200px;
     vertical-align: sub;
+}
+
+.logo-img{
+    width: 100%;
+    height: 100%;
 }
 
 .round-nav {
@@ -1146,6 +1151,7 @@ header a.logo img {
     position: relative;
     -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    width: 33%;
 }
 
 .da-thumbs{
@@ -1156,6 +1162,7 @@ header a.logo img {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .da-thumbs>li{
@@ -1200,14 +1207,38 @@ header a.logo img {
     opacity: 0.851;
 }
 
+.overlay-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linkedin-profile{
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.linkedin-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-location{
+    margin: 0 22px;
+}
+
 .nav-pills .nav-link {border-radius: 0;}
 
 .search-icon {
     border: 1px solid white;
-    border-radius: 50%;
+    border-radius: 100%;
     display: inline-block;
     color: #ffffff;
-    padding: 5px 10px;
+    padding: 8px 10px;
     margin-bottom: 10px;
 }
 
@@ -2255,6 +2286,11 @@ ul.rounded li::before {
 .loader:before {
     animation-delay: .5s;
 }
+
+.team-profile{
+    width: 100%;
+    height: 100%;
+}
 @keyframes load {
     0% {
         transform: scale(0);
@@ -2439,9 +2475,9 @@ ul.rounded li::before {
     body {
         text-align: center;
     }
-    section {
+    /* section {
         padding: 4.5rem 0;
-    }
+    } */
     .padding-top {
         padding-top: 4.5rem;
     }
