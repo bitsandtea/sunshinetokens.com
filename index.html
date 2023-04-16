@@ -121,12 +121,7 @@
 
     <!--Get Started Model Popup-->
         <div class="quote-content hidden animated-modal" id="animatedModal">
-            <div id="info-video">
-                <h2 class="main-font font-weight-600 text-black my-2">You have signed up - We will email you soon!</h2>
-                <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"></iframe>
-            </div>
-            
-            <div id="signup-popup">
+            <div id="signup-popup" class="signup-popup">
                 <!--Heading-->
                 <div class="pb-md-5 p-0 text-center">
                 <span class="text-blue font-weight-200 font-20">Learn More about SunshineTokens</span>
@@ -164,10 +159,14 @@
 
                     <!--Button-->
                     <div class="col-md-12">
-                        <button class="btn btn-large btn-rounded btn-green btn-hvr-up btn-hvr-blue modal_contact_btn" id="quote_submit_btn" onclick="playVideo()">Submit Now</button>
+                    <a href="#" class="btn btn-large btn-rounded btn-green btn-hvr-up btn-hvr-blue modal_contact_btn" id="quote_submit_btn" onclick="playVideo()">Submit Now</a>
                     </div>
                 </div>
             </form> 
+            </div>
+            <div id="info-video" class="info-video">
+                <h2 class="main-font font-weight-600 text-black success-text">You have signed up - We will email you soon!</h2>
+                <iframe width="420" height="345" class="success-video" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"></iframe>
             </div>
     
         </div>

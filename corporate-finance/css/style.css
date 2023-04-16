@@ -1211,14 +1211,20 @@ header a.logo img {
     margin-bottom: 10px;
 }
 
-#info-video{
+.info-video{
     /* change this to block to show video */
     display: none; 
+    transition: 2s ease-in;
 }
 
-#signup-popup{
+.signup-popup{
     display: block;
 }
+
+.success-video{
+    margin-top: 20px;
+}
+
 /* ===================================
    Client
 ====================================== */
