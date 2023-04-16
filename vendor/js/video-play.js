@@ -1,4 +1,5 @@
-function playVideo() {
+function playVideo(event) {
+    event.preventDefault();
     var modal = document.getElementById("signup-popup");
     var video = document.getElementById("info-video");
     if (video.style.display === "none" && modal.style.display === "none") {
