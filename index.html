@@ -52,7 +52,7 @@
                     <a class="nav-link scroll line" href="#portfolio">Our Clients</a>
                     <a class="nav-link scroll line" href="#pricing">Pricing Plans</a>
                     <a class="nav-link scroll line" href="#blog">Blog</a>
-                    <a href="https://www.youtube.com/watch?v=dvgZkm1xWPE&list=RDdvgZkm1xWPE&start_radio=1" class="btn btn-large btn-rounded btn-green btn-hvr-up btn-hvr-blue" data-animation-duration="500" data-fancybox data-src="#animatedModal">Get Started Now</a>
+                    <a href="https://www.youtube.com/watch?v=dvgZkm1xWPE&list=RDdvgZkm1xWPE&start_radio=1" class="btn btn-large btn-rounded btn-green btn-hvr-up btn-hvr-blue" data-animation-duration="500" data-fancybox data-src="#animatedModal" onclick="resetModal()">Get Started Now</a>
                 </div>
             </div>
         </div>
@@ -1019,7 +1019,12 @@
 <script src="corporate-finance/js/jquery.hoverdir.js"></script>
 <!-- custom script -->
 <script src="vendor/js/contact_us.js"></script>
-<script src="vendor/js/video-play.js"></script>
 <script src="corporate-finance/js/script.js"></script>
+<script>
+function resetModal() {
+  $('.signup-popup').removeClass('d-none');
+  $('.info-video').removeClass('d-block');
+}
+</script>
 </body>
 </html>

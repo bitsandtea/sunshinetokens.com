@@ -108,8 +108,8 @@ $(".modal_contact_btn").on('click', function () {
     //disable submit button on click
     // $(".modal_contact_btn").attr("disabled", "disabled");
     // $(".modal_contact_btn b").text('Sending');
-    $(".modal_contact_btn i").removeClass('d-none');
-
+    $(".modal_contact_btn i").removeClass('d-none');  
+    
     //simple validation at client's end
     var post_data, output;
     var proceed = "true";
