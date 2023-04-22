@@ -13,6 +13,7 @@ if($_POST)
 
     $your_email = "youremail@website.com";
 
+
     //check if its an ajax request, exit if not
     if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
 
@@ -81,6 +82,7 @@ if($_POST)
     }
 
     //additional php validation
+
     if(isset($user_Name)) {
         if (strlen($user_Name) < 3) // If length is less than 3 it will throw an HTTP error.
         {
@@ -108,7 +110,7 @@ if($_POST)
 //    $mail->Port       = 587;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom($user_Email, $quote_Name);
+    $mail->setFrom($user_Email,$quote_Name);
     $mail->addAddress($your_email, 'Theme Industry');     // Add a recipient
     $mail->addReplyTo($your_email, 'Information');
 
@@ -133,13 +135,37 @@ if($_POST)
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
 
-    if(!$mail->send())
-    {
-        $output = json_encode(array('type'=>'error', 'text' => 'Could not send mail! Please check your PHP mail configuration.'));
-        die($output);
-    }else{
-        $output = json_encode(array('type'=>'message', 'text' => 'Hi '.$user_Name .' Thank you for contacting us.'));
-        die($output);
-    }
+
+
+    // if(!$mail->send())
+    // {
+    //     $output = json_encode(
+    //         array(
+    //             'type'=>  'error', 
+    //             'text' => 'Could not send mail! Please check your PHP mail configuration'
+    //             )
+    //         );
+    //     die($output);
+    // }else{
+    //     $output = json_encode(
+    //         array(
+    //             'type'=>'message', 
+    //             'text' => 'Hi '.$user_Name .' Thank you for contacting us.'
+    //         )
+    //     );
+    //     die($output);
+    // }
+
+    $output = json_encode(
+                array(
+                    'type'=>'success', 
+                    'text' => 'You have signed up! We will email you soon!'
+                )
+            );
+            die($output);
+
+
+
 }
 ?>
+
