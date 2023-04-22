@@ -13,7 +13,6 @@ if($_POST)
 
     $your_email = "youremail@website.com";
 
-
     //check if its an ajax request, exit if not
     if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
 
@@ -40,27 +39,6 @@ if($_POST)
             $user_Name = filter_var($_POST["userName"], FILTER_SANITIZE_STRING);
         }
     }
-    if(isset($_POST["firstName"]) && isset($_POST["lastName"])) {
-        if(!isset($_POST["firstName"]) && !isset($_POST["lastName"]))
-        {
-            $output = json_encode(array('type'=>'error', 'text' => 'Input fields are empty!'));
-            die($output);
-        }
-        else {
-            $user_Name = filter_var($_POST["firstName"], FILTER_SANITIZE_STRING) . " " . filter_var($_POST["lastName"], FILTER_SANITIZE_STRING);
-        }
-    }
-    //education
-    if(isset($_POST["fatherName"])) {
-        if(!isset($_POST["fatherName"]))
-        {
-            $output = json_encode(array('type'=>'error', 'text' => 'Input fields are empty!'));
-            die($output);
-        }
-        else {
-            $father_Name = filter_var($_POST["fatherName"], FILTER_SANITIZE_STRING);
-        }
-    }
     if(isset($_POST["quoteName"])) {
         if(!isset($_POST["quoteName"]))
         {
@@ -71,27 +49,6 @@ if($_POST)
             $quote_Name = filter_var($_POST["quoteName"], FILTER_SANITIZE_STRING);
         }
     }
-    if(isset($_POST["userAddress"])) {
-        if(!isset($_POST["userAddress"]))
-        {
-            $output = json_encode(array('type'=>'error', 'text' => 'Input fields are empty!'));
-            die($output);
-        }
-        else {
-            $user_Address = filter_var($_POST["userAddress"], FILTER_SANITIZE_STRING);
-        }
-    }
-    if(isset($_POST["course"])) {
-        if(!isset($_POST["course"]))
-        {
-            $output = json_encode(array('type'=>'error', 'text' => 'Input fields are empty!'));
-            die($output);
-        }
-        else {
-            $applied_Course = filter_var($_POST["course"], FILTER_SANITIZE_STRING);
-        }
-    }
-
     if(isset($_POST["userEmail"])) {
         if(!isset($_POST["userEmail"]))
         {
@@ -112,16 +69,6 @@ if($_POST)
             $user_Phone = $_POST["userPhone"];
         }
     }
-    if(isset($_POST["userSubject"])) {
-        if(!isset($_POST["userSubject"]))
-        {
-            $output = json_encode(array('type'=>'error', 'text' => 'Input fields are empty!'));
-            die($output);
-        }
-        else {
-            $user_Subject = $_POST["userSubject"];
-        }
-    }
     if(isset($_POST["userCity"])) {
         if(!isset($_POST["userCity"]))
         {
@@ -132,114 +79,6 @@ if($_POST)
             $user_City = $_POST["userCity"];
         }
     }
-    if(isset($_POST["projectType"])) {
-        if(!isset($_POST["projectType"]))
-        {
-            $output = json_encode(array('type'=>'error', 'text' => 'Input fields are empty!'));
-            die($output);
-        }
-        else {
-            $pro_type = $_POST["projectType"];
-        }
-    }
-
-    //Directory listing
-    if(isset($_POST["propertyId"])) {
-        if(!isset($_POST["propertyId"]))
-        {
-            $output = json_encode(array('type'=>'error', 'text' => 'Input fields are empty!'));
-            die($output);
-        }
-        else {
-            $property_id = $_POST["propertyId"];
-        }
-    }
-    if(isset($_POST["propertyType"])) {
-        if(!isset($_POST["propertyType"]))
-        {
-            $output = json_encode(array('type'=>'error', 'text' => 'Input fields are empty!'));
-            die($output);
-        }
-        else {
-            $property_type = $_POST["propertyType"];
-        }
-    }
-    if(isset($_POST["quoteBudget"])) {
-        if(!isset($_POST["quoteBudget"]))
-        {
-            $output = json_encode(array('type'=>'error', 'text' => 'Input fields are empty!'));
-            die($output);
-        }
-        else {
-            $budget = $_POST["quoteBudget"];
-        }
-    }
-    //consultant template
-    if(isset($_POST["service"])) {
-        if(!isset($_POST["service"]))
-        {
-            $output = json_encode(array('type'=>'error', 'text' => 'Input fields are empty!'));
-            die($output);
-        }
-        else {
-            $service = $_POST["service"];
-        }
-    }
-    //Reservation template
-    if(isset($_POST["reservationDate"])) {
-        if(!isset($_POST["reservationDate"]))
-        {
-            $output = json_encode(array('type'=>'error', 'text' => 'Input fields are empty!'));
-            die($output);
-        }
-        else {
-            $res_date = $_POST["reservationDate"];
-        }
-    }
-    if(isset($_POST["totalPeople"])) {
-        if(!isset($_POST["totalPeople"]))
-        {
-            $output = json_encode(array('type'=>'error', 'text' => 'Input fields are empty!'));
-            die($output);
-        }
-        else {
-            $total_people = $_POST["totalPeople"];
-        }
-    }
-    //spa
-    if(isset($_POST["reserveTime"])) {
-        if(!isset($_POST["reserveTime"]))
-        {
-            $output = json_encode(array('type'=>'error', 'text' => 'Input fields are empty!'));
-            die($output);
-        }
-        else {
-            $res_time = $_POST["reserveTime"];
-        }
-    }
-
-    //medical
-    if(isset($_POST["userGender"])) {
-        if(!isset($_POST["userGender"]))
-        {
-            $output = json_encode(array('type'=>'error', 'text' => 'Input fields are empty!'));
-            die($output);
-        }
-        else {
-            $user_gender = $_POST["userGender"];
-        }
-    }
-    if(isset($_POST["userMessage"])) {
-        if(!isset($_POST["userMessage"]))
-        {
-            $output = json_encode(array('type'=>'error', 'text' => 'Input fields are empty!'));
-            die($output);
-        }
-        else {
-            $user_Message = filter_var($_POST["userMessage"], FILTER_SANITIZE_STRING);
-        }
-    }
-
 
     //additional php validation
     if(isset($user_Name)) {
@@ -256,13 +95,6 @@ if($_POST)
             die($output);
         }
     }
-    if(isset($_POST["userMessage"])) {
-        if (strlen($user_Message) < 5) //check emtpy message
-        {
-            $output = json_encode(array('type' => 'error', 'text' => 'Too short message! Please enter something.'));
-            die($output);
-        }
-    }
 
 
 
@@ -276,7 +108,7 @@ if($_POST)
 //    $mail->Port       = 587;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom($user_Email,$user_Name);
+    $mail->setFrom($user_Email, $quote_Name);
     $mail->addAddress($your_email, 'Theme Industry');     // Add a recipient
     $mail->addReplyTo($your_email, 'Information');
 
@@ -289,66 +121,11 @@ if($_POST)
     if(isset($_POST["userEmail"])) {
         $mail->Body .= "<strong>Email: </strong>" . $user_Email . "<br>";
     }
-    //education
-    if(isset($_POST["fatherName"])) {
-        $mail->Body .= "<strong>Father Name: </strong>" . $father_Name . "<br>";
-    }
-    if(isset($_POST["userAddress"])) {
-        $mail->Body .= "<strong>Address: </strong>" . $user_Address . "<br>";
-    }
-    if(isset($_POST["course"])) {
-        $mail->Body .= "<strong>Applied Course: </strong>" . $applied_Course . "<br>";
-    }
     if(isset($_POST["userPhone"])) {
         $mail->Body .= "<strong>Phone: </strong>" . $user_Phone . "<br>";
     }
-    if(isset($_POST["userSubject"])) {
-        $mail->Body .= "<strong>Subject: </strong>" . $user_Subject . "<br>";
-    }
     if(isset($_POST["userCity"])) {
         $mail->Body .= "<strong>City Or Country: </strong>" . $user_City . "<br>";
-    }
-    if(isset($_POST["projectType"])) {
-        $mail->Body .= "<strong>Project Type: </strong>" . $pro_type . "<br>";
-    }
-    if(isset($_POST["quoteBudget"])) {
-        $mail->Body .= "<strong>Budget: </strong>" . $budget . "<br>";
-    }
-    //Directory listing
-    if(isset($_POST["propertyId"])) {
-        $mail->Body .= "<strong>Property Id: </strong>" . $property_id . "<br>";
-    }
-    if(isset($_POST["propertyType"])) {
-        $mail->Body .= "<strong>Property Type: </strong>" . $property_type . "<br>";
-    }
-    // dental
-    if(isset($_POST["service"])) {
-        $mail->Body .= "<strong>Service Type: </strong>" . $service . "<br>";
-    }
-    //Reservation , spa , medical template
-    if(isset($_POST["reservationDate"])) {
-        $mail->Body .= "<strong>Reservation Date: </strong>" . $res_date . "<br>";
-    }
-    //spa
-    if(isset($_POST["reserveTime"])) {
-        $mail->Body .= "<strong>Reserved Time: </strong>" . $res_time . "<br>";
-    }
-    if(isset($_POST["totalPeople"])) {
-        $mail->Body .= "<strong>Total People: </strong>" . $total_people . "<br>";
-    }
-    //medical
-    if(isset($_POST["userGender"])) {
-        $mail->Body .= "<strong>Gender: </strong>" . $user_gender . "<br>";
-    }
-    $mail->Body .= '<br>';
-
-    if(isset($_POST["userMessage"])) {
-        $mail->Body .= "<strong>Message: </strong><br><br><div style='background-color: #EDEFF2;padding:30px 15px;border-radius:10px;min-height:50px;width:90%;'>" . $user_Message . "</div><br>";
-    }
-    $mail->Body .= '<strong>Best Regards,</strong><br>';
-
-    if(isset($user_Name)) {
-        $mail->Body .= $user_Name . "<br>";
     }
     if(isset($_POST["quoteName"])) {
         $mail->Body .= "<strong>Quote Name: </strong>" . $quote_Name . "<br>";
