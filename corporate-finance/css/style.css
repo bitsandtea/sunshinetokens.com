@@ -1242,6 +1242,20 @@ header a.logo img {
     margin-bottom: 10px;
 }
 
+.info-video{
+    /* change this to block to show video */
+    display: none; 
+    transition: 2s ease-in;
+}
+
+.signup-popup{
+    display: block;
+}
+
+.success-video{
+    margin-top: 20px;
+}
+
 /* ===================================
    Client
 ====================================== */
@@ -1250,6 +1264,7 @@ header a.logo img {
     width: auto;
     max-width: 100%;
     display: inline-block;
+    
 }
 
 .partners-slider .logo-item{
@@ -2675,4 +2690,12 @@ ul.rounded li::before {
     .get-started-btn {
         margin: 0;
     }
+}
+
+.popup{
+    display: block;
+}
+
+.video-player{
+    display: none;
 }
