@@ -129,7 +129,7 @@
                 <h2 class="main-font font-weight-600 text-black mt-2">Get here the prospect with info about <span class="text-green js-rotating">business plan, financials, opportunity</span></h2>
                 </div>
             <!--Contact Form-->
-            <form class="contact-form" id="modal-contact-form-data" action="contact-mailer.php" method="POST" >
+            <form class="contact-form" id="modal-contact-form-data">
                 <div class="row">
                     <!--Result-->
                     <div class="col-12" id="quote_result">
@@ -138,7 +138,7 @@
                     <!-- Left Column -->
                     <div class="col-md-6">
                         <div class="form-group">
-                            <input class="form-control" id="quote_name" name="userName" placeholder="Name" required=""
+                            <input class="form-control" id="quote_name" name="userName" placeholder="Name:" required=""
                                 type="text">
                         </div>
                         <div class="form-group">
@@ -926,34 +926,28 @@
                         <div class="col-12">
                             <div class="col-sm-12 px-0" id="result"></div>
                         </div>
-
-                        <div class="col-12 col-md-6">
-                            <div class="form-group">
-                                <input class="form-control" type="text" placeholder="First Name:" required="" id="first_name" name="firstName">
-                            </div>
+                        
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control" name="userName" placeholder="Name:" required=""
+                                type="text">
                         </div>
-                        <div class="col-12 col-md-6">
-                            <div class="form-group">
-                                <input class="form-control" type="text" placeholder="Last Name:" required="" id="last_name" name="lastName">
-                            </div>
+                        <div class="form-group">
+                            <input class="form-control" name="userPhone" placeholder="Phone number with country code" required=""
+                                type="text">
                         </div>
-                        <div class="col-12 col-md-6">
-                            <div class="form-group">
-                                <input class="form-control" type="email" placeholder="Email:" required="" id="email" name="userEmail">
-                            </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control" name="userEmail" placeholder="Email" required=""
+                                type="email">
                         </div>
-                        <div class="col-12 col-md-6">
-                            <div class="form-group">
-                                <input class="form-control" type="tel" placeholder="Phone:" id="phone" name="userPhone">
-                            </div>
+                        <div class="form-group">
+                            <input class="form-control" name="userAddress" placeholder="City / Country" required="" type="text">
                         </div>
+                    </div>
                         <div class="col-12">
-                            <div class="form-group">
-                                <textarea class="form-control" placeholder="Message" id="message" name="userMessage"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <button type="button" class="btn btn-large green-long-btn rounded-pill w-100 btn-hvr-up btn-hvr-blue mt-4 contact_btn" id="submit_btn">SUBMIT REQUEST</button>
+                            <button type="button" class="btn btn-large green-long-btn rounded-pill w-100 btn-hvr-up btn-hvr-blue mt-4 contact_btn" id="submit_btn">GET PROSPECT NOW</button>
                         </div>
                     </div>
                 </form>
