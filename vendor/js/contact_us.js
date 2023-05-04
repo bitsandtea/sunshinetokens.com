@@ -151,7 +151,7 @@ $(".contact_btn").on('click', function () {
                 if (response.type == 'error') {
                     output = '<div class="alert-danger" style="padding:10px 15px; margin-bottom:30px;">' + response.text + '</div>';
                 } else {
-                    // output = '<div class="alert-success" style="padding:10px 15px; margin-bottom:30px;">' + response.text + '</div>';
+                    output = '<div class="alert-success" style="padding:10px 15px; margin-bottom:30px;">' + 'You have signed up! We will email you soon!' + '</div>';
                     //reset values in all input fields
                     $('.contact-form input').val('');
                     $('.contact-form textarea').val('');
