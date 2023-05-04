@@ -1501,6 +1501,9 @@ header a.logo img {
 
 .contact-sec .contact-details, .contact-sec .contact-form-box{
     padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .contact-sec .contact-details .contact-heading{
